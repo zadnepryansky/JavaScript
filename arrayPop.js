@@ -1,7 +1,7 @@
 const myArray = [1, 2, 3]
 console.log(myArray)
 
-myArray.pop()
+myArray.pop()   // delete last element
 console.log(myArray)  // [ 1, 2 ]
 
 const removedElement = myArray.pop()  // last element in array -> [2]
