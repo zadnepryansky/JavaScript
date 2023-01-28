@@ -1,12 +1,5 @@
 const sum = (a, b) => a + b
 
-export default sum
+const mult = (a, b) => a * b
 
-// export example 2
-const one = 1
-const two = 'two'
-
-export {
-    one,
-    two
-}
+export {sum, mult}

@@ -1,17 +1,10 @@
-import sumNumbers from './moduleOne.mjs'
+import {sum, mult as multNumbers} from './moduleOne.mjs'
 
-const res = sumNumbers(10, 2)
-console.log(res)
+
+console.log(sum(10, 2))
 // terminal 12
+console.log(multNumbers(10, 2))
+// terminal 20
 
 
 // run dode in terminal -> open terminal -> go to the modules folder -> write 'node moduleTwo.mjs'
-
-// import example 2
-import {
-    one,
-    two
-} from './moduleOne.mjs'
-
-console.log(one) // 1
-console.log(two) // two
