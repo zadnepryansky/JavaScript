@@ -21,3 +21,22 @@ firsComment.upvote()
 console.log(firsComment.votesQty)  // 2
 
 console.log(firsComment)  // Comment { text: 'Firs comment', votesQty: 2 }
+
+// Check:
+firsComment.hasOwnProperty('text')   // true
+firsComment.hasOwnProperty('votesQty')   // true
+firsComment.hasOwnProperty('upvote')   // false
+firsComment.hasOwnProperty('hasOwnProperty')   // false
+
+// Create another exemplar Classes example:
+const secondComment = new Comment('Second comment')
+const thirdComment = new Comment('Third comment')
+
+const myOwnComment = new Comment('My own comment')
+
+myOwnComment.upvote()
+
+console.log(myOwnComment.votesQty)  // 1
+
+// prototype __proto__
+console.log(Comment.prototype === myOwnComment.__proto__)  // true
